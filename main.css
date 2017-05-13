@@ -1,1 +1,55 @@
+/*aqua: #34D1D1
+dark purple: #2F2235
+lighter purple: #3F3244
+light gray: #F2F2F2
+middle gray: #D1D2D3
+dark gray: #666666
+black #000000*/
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #2F2235;
+  color: #F2F2F2;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+  padding-left: 10px;
+}
+
+header .header-party {
+  color: #34D1D1;
+}
+
+header h3 {
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+
+@media (max-width: 350px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;
+  }
+
+  header h1 {
+    padding-left: 0px;
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+
+  header h3 {
+    padding-right: 0px;
+    font-size: 12px;
+  }
+}
