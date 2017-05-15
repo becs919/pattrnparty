@@ -13,9 +13,7 @@ $(document).ready(() => {
         $('.accordian-tabs-ul').find('.active').removeClass('active');
         $(this).addClass('active');
 
-      } else {
-        $('.accordian-tabs-ul .is-open').removeClass('is-open').hide();
-        $(this).removeClass('active');
       }
+      
    });
 });

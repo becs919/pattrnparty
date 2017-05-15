@@ -44,9 +44,8 @@ header h3 {
 /*ACCORDION TABS*/
 .section-header {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  margin: 20px;
+  margin: 20px 50px;
 }
 
 .accordian-section-header {
@@ -54,7 +53,7 @@ header h3 {
   width: 30%;
 }
 
-hr {
+.section-header hr {
   width: 100%;
   border-top: 1px solid #D1D2D3;
   border-bottom: none;
@@ -64,9 +63,9 @@ hr {
 
 .accordian-tabs-ul {
   margin: 0 auto;
-  width: 75%;
+  width: 80%;
   height: 400px;
-  padding-top: 5%;
+  padding-top: 3%;
 }
 
 .accordian-tabs-ul li {
@@ -75,19 +74,22 @@ hr {
 }
 
 .accordian-tabs-ul li a {
-    display: inline-block;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: #000;
-    padding: 10px;
-    background-color: #F2F2F2;
+  display: inline-block;
+  padding: 10px;
+  width: 18%;
+  margin-right: -4px;
+  /*text-decoration: none;*/
+  color: #666666;
+  background-color: #F2F2F2;
 }
 
 .accordian-tabs-ul li a:hover, .accordian-tabs-ul li a.active {
-    background-color: #FFF;
-    border-left: 1px solid #D1D2D3;
-    border-top: 1px solid #D1D2D3;
-    border-right: 1px solid #D1D2D3;
+  background-color: #FFF;
+  border-left: 1px solid #D1D2D3;
+  border-top: 1px solid #D1D2D3;
+  border-right: 1px solid #D1D2D3;
+  font-weight: 600;
+  color: #000;
 }
 
 .accordian-tabs-ul .tab-information {
@@ -95,29 +97,40 @@ hr {
   display: none;
   float: left;
   background-color: #FFF;
-  overflow: hidden;
   padding: 15px;
+  width: 75%;
 }
 
 .accordian-tabs-ul .is-open {
   border: 1px solid #D1D2D3;
-  display: flex;
-  width: 75%;
 }
 
 li img {
   float: left;
   height: 200px;
+  margin-right: 15px;
+}
+
+li .tab-line {
+  border-top: 1px solid #D1D2D3;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
 }
 
 .open-tab {
-  padding-left: 10px;
-  /*padding-right: 10px;*/
-  width: 100%;
+  padding-right: 10px;
 }
+
 .tab-paragraph {
   overflow-wrap: break-word;
-  /*padding-right: 10px;*/
+  line-height: 130%;
+}
+
+.tab-paragraph-header {
+  font-weight: 600;
+  padding: 10px;
+  margin: 10px;
 }
 
 
@@ -140,6 +153,10 @@ li img {
     padding-right: 0px;
     font-size: 12px;
   }
+
+  .tab-paragraph-header {
+    /*NEED TO ADD SPACE BELOW PIC*/
+  }
 }
 
 
@@ -151,9 +168,22 @@ li img {
 
   .accordian-section-header {
     width: auto;
+    padding-bottom: 5px;
   }
 
-  hr {
-    width: 30%;
+  .section-header hr {
+    width: 25%;
+  }
+
+  .accordian-tabs-ul li a {
+    display: block;
+    width: 75%;
+    margin-right: 0px;
+  }
+
+  .accordian-tabs-ul .tab-information {
+    position: inherit;
+    display: none;
+    float: left;
   }
 }
