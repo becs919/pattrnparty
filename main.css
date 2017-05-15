@@ -8,8 +8,11 @@ black #000000*/
 
 body {
   font-family: 'Open Sans', sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 
+/*HEADER*/
 header {
   display: flex;
   justify-content: space-between;
@@ -17,12 +20,14 @@ header {
   height: 60px;
   background-color: #2F2235;
   color: #F2F2F2;
+  width: 100%;
 }
 
 header h1 {
   text-transform: uppercase;
-  font-weight: 300;
   padding-left: 10px;
+  font-weight: 300;
+  font-size: 20px;
 }
 
 header .header-party {
@@ -30,12 +35,95 @@ header .header-party {
 }
 
 header h3 {
-  font-weight: 600;
   padding-right: 10px;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 
-@media (max-width: 350px) {
+/*ACCORDION TABS*/
+.section-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+.accordian-section-header {
+  overflow: visible;
+  width: 30%;
+}
+
+hr {
+  width: 100%;
+  border-top: 1px solid #D1D2D3;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.accordian-tabs-ul {
+  margin: 0 auto;
+  width: 75%;
+  height: 400px;
+  padding-top: 5%;
+}
+
+.accordian-tabs-ul li {
+  list-style: none;
+  display: inline;
+}
+
+.accordian-tabs-ul li a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    background-color: #F2F2F2;
+}
+
+.accordian-tabs-ul li a:hover, .accordian-tabs-ul li a.active {
+    background-color: #FFF;
+    border-left: 1px solid #D1D2D3;
+    border-top: 1px solid #D1D2D3;
+    border-right: 1px solid #D1D2D3;
+}
+
+.accordian-tabs-ul .tab-information {
+  position: absolute;
+  display: none;
+  float: left;
+  background-color: #FFF;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.accordian-tabs-ul .is-open {
+  border: 1px solid #D1D2D3;
+  display: flex;
+  width: 75%;
+}
+
+li img {
+  float: left;
+  height: 200px;
+}
+
+.open-tab {
+  padding-left: 10px;
+  /*padding-right: 10px;*/
+  width: 100%;
+}
+.tab-paragraph {
+  overflow-wrap: break-word;
+  /*padding-right: 10px;*/
+}
+
+
+
+
+@media (max-width: 400px) {
   header {
     flex-direction: column;
     justify-content: center;
@@ -44,12 +132,28 @@ header h3 {
 
   header h1 {
     padding-left: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-size: 20px;
   }
 
   header h3 {
     padding-right: 0px;
     font-size: 12px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .section-header {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .accordian-section-header {
+    width: auto;
+  }
+
+  hr {
+    width: 30%;
   }
 }
