@@ -1,9 +1,9 @@
 
-$(document).ready(() => {
+$(document).ready(function() {
     $('.accordian-tabs-ul').children('li').first().children('a').addClass('active')
         .next().addClass('is-open').show();
 
-    $('.accordian-tabs-ul').on('click', 'li > a', () => {
+    $('.accordian-tabs-ul').on('click', 'li > a', function() {
 
       if (!$(this).hasClass('active')) {
 
