@@ -148,7 +148,7 @@ li .tab-line {
 
 .tab-paragraph-header {
   font-weight: 600;
-  padding: 10px;
+  padding: 5px;
 }
 
 @media (max-width: 400px) {
@@ -174,7 +174,6 @@ li .tab-line {
   }
 }
 
-/*NEED TO MAKE TABS SAME WIDTH AS BOX*/
 /*NEED TO ADD PLUS/MINUS TO MOBILE*/
 /*NEED TO ADD LINK TO CODE*/
 
