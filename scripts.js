@@ -3,7 +3,7 @@ $(document).ready(() => {
     $('.accordian-tabs-ul').children('li').first().children('a').addClass('active')
         .next().addClass('is-open').show();
 
-    $('.accordian-tabs-ul').on('click', 'li > a', function() {
+    $('.accordian-tabs-ul').on('click', 'li > a', () => {
 
       if (!$(this).hasClass('active')) {
 
@@ -14,6 +14,6 @@ $(document).ready(() => {
         $(this).addClass('active');
 
       }
-      
+
    });
 });
