@@ -186,10 +186,6 @@ li .tab-line {
     padding-right: 0px;
     font-size: 12px;
   }
-
-  .view-code-button {
-    width: 80%;
-  }
 }
 
 
@@ -230,5 +226,9 @@ li .tab-line {
     margin: auto;
     display: block;
     height: 250px;
+  }
+
+  .view-code-button {
+    width: 80%;
   }
 }
