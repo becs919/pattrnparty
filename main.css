@@ -222,6 +222,7 @@ li .tab-line {
     display: none;
     float: left;
     padding-right: 5px;
+    margin-bottom: 0px;
   }
 
   li img {
