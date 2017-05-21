@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
     $('.accordian-tabs-ul').children('li').first().children('a').addClass('active')
         .next().addClass('is-open').show();
@@ -16,4 +15,14 @@ $(document).ready(function() {
       }
 
    });
+});
+
+
+
+$('.navShowA').click(function(e) {
+  e.preventDefault();
+  $('.navHide').toggle();
+  $('.nav-header').toggleClass('navActive');
+
+  $('.navActive').css( "display", "block")
 });

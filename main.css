@@ -249,6 +249,48 @@ li .tab-line {
 }
 
 
+/*MENU*/
+
+.nav-header {
+  margin: 0 auto;
+  background-color: #D1D2D3;
+  width: 90%;
+  height: 60px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.logo img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: #666666;
+}
+
+.nav-link a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+li input {
+  height: auto;
+  padding: 5px;
+  border: 1px solid #666666;
+  background: url(./images/icon.png) no-repeat left 5px center;
+  background-size: 15px;
+  text-indent: 20px;
+}
+
+.nav-header .navShowA {
+  display: none;
+}
+
+
 /*MEDIA QUERIES*/
 @media (max-width: 400px) {
   /*Header*/
@@ -330,4 +372,17 @@ li .tab-line {
   .one, .two, .three, .four {
     display: none;
   }
+
+  /*NAV BAR*/
+
+  .nav-header .navHide {
+    display: none;
+  }
+
+  .nav-header .navShowA {
+    display: block;
+    text-decoration: none;
+    color: #666666;
+  }
+
 }
