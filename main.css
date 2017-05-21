@@ -286,6 +286,7 @@ li .tab-line {
   .accordian-section-header {
     width: auto;
     padding-bottom: 5px;
+    margin-top: 40px;
   }
 
   .section-header hr {
