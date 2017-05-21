@@ -8,12 +8,15 @@ black #000000*/
 
 body {
   font-family: 'Open Sans', sans-serif;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+
 }
 
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 *,
@@ -55,7 +58,7 @@ header h3 {
 .section-header {
   display: flex;
   align-items: center;
-  margin: 20px 40px;
+  margin: 30px 40px;
 }
 
 .accordian-section-header {
@@ -167,9 +170,88 @@ li .tab-line {
   color: #34D1D1;
 }
 
+/*FLEXIBLE CARDS*/
+
+.cards {
+  display: grid;
+  grid-template-columns: 33% 15px 33% 15px 33%;
+  grid-template-rows: auto 15px auto 15px auto;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card {
+  border: 1px solid #D1D2D3;
+}
+
+.card-header {
+  padding: 20px;
+  border-bottom: 1px solid #D1D2D3;
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card-image {
+  height: 200px;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.one {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.two {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.three {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.four {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.five {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.six {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.seven {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
 
 /*MEDIA QUERIES*/
 @media (max-width: 400px) {
+  /*Header*/
   header {
     flex-direction: column;
     justify-content: center;
@@ -194,6 +276,8 @@ li .tab-line {
     flex-direction: column;
     align-content: center;
   }
+
+  /*ACCORDION TABS*/
 
   .accordian-tabs-ul .is-open {
     border-top: 2px solid #D1D2D3;
@@ -230,5 +314,15 @@ li .tab-line {
 
   .view-code-button {
     width: 80%;
+  }
+
+  /*FLEXIBLE CARDS*/
+
+  .cards {
+    display: block;
+  }
+
+  .card {
+    margin: 20px 0px;
   }
 }
