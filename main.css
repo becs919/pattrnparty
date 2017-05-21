@@ -326,4 +326,8 @@ li .tab-line {
   .card {
     margin: 20px 0px;
   }
+
+  .one, .two, .three, .four {
+    display: none;
+  }
 }
