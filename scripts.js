@@ -21,8 +21,7 @@ $(document).ready(function() {
 
 $('.navShowA').click(function(e) {
   e.preventDefault();
-  $('.navHide').toggle();
+  $('.navHide').slideToggle();
   $('.nav-header').toggleClass('navActive');
-
-  $('.navActive').css( "display", "block")
+  $('.navActive').css( "display", "block", "float", "right")
 });

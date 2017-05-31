@@ -377,12 +377,29 @@ li input {
 
   .nav-header .navHide {
     display: none;
+    background-color: rgba(220, 220, 220, 0.98);
+    text-align: right;
+    padding: 10px;
   }
 
   .nav-header .navShowA {
     display: block;
     text-decoration: none;
-    color: #666666;
+    color: #777;
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  .navActive {
+    display: block;
+  }
+
+  .nav-header li input {
+    background-color: #F2F2F2;
+  }
+
+  .header-button {
+    margin-top: 200px;
   }
 
 }
